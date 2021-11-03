@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>MAU SEWA BOT?</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+
+  </head>
+
+  <body onload="init()">
+
+    <audio id="myAudio">
+
+      <source src="assets/music.mp3" type="audio/mpeg" />
+
+      Your browser does not support the audio element.
+
+    </audio>
+
+    <audio id="myOpening">
+
+      <source src="assets/opening.mp3" type="audio/mpeg" />
+
+      Your browser does not support the audio element.
+
+    </audio>
+
+    <div class="preload">TUNGGU SEBENTAR...</div>
+
+    <div class="vidcont">
+
+      <div class="divvideo">
+
+        <video id="myVideo" width="100%" height="100%">
+
+          <source src="assets/video.mp4" type="video/mp4" />
+
+          Your browser doe`s not support HTML5 video.
+
+        </video>
+
+      </div>
+
+    </div>
+
+    <img src="assets/wp2.jpg" />
+
+    <div class="container">
+
+      <div class="myclock">
+
+        <div class="myakun" id="nama">
+
+          <span id="spannama3" onclick="gantinama()"></span>
+
+        </div>
+
+        <div class="myakun reset" onclick="reverse()">Reset</div>
+
+        <div class="myakun" onclick="toggleFullscreen()">Full Screen</div>
+
+        <div class="contjam">
+
+          <div class="jam">-:-</div>
+
+          <div class="tanggal">-</div>
+
+          <div class="ucapan" onclick="carigoogle()"><span id="spannama2"></span></div>
+
+        </div>
+
+      </div>
+
+      <div class="mywindow" id="myform">
+
+        <div class="mycontrol">
+
+          <div class="myclose"></div>
+
+          <div class="mymini"></div>
+
+          <div class="mymax"></div>
+
+        </div>
+
+        <div class="myheader">
+
+          Registrasi
+
+        </div>
+
+        <div class="mybody">
+
+          <div class="mytitle">
+
+           beneran ya mau sewa >_<
+
+          </div>
+
+          <div class="mycontent">
+
+            <div>Nama :</div>
+
+            <input class="mytext" type="text" id="mynama" name="nama" required />
+
+          </div>
+
+          <div class="mybutton">
+
+            <div class="mybuttonyes" onclick="mywrite()">oke</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mywindow myanimated myhide" id="mywindow">
+
+        <div class="mycontrol">
+
+          <div class="myclose" onclick="reverse()"></div>
+
+          <div class="mymini"></div>
+
+          <div class="mymax"></div>
+
+        </div>
+
+        <div class="myheader" id="mywindowheader">Halo <span id="spannama"></span></div>
+
+        <div class="mybody">
+
+          <div class="mytitle">
+
+            KLIK SEKALI LAGI!!! 
+
+          </div>
+
+          <div class="mycontent">
+            |I----𝐎𝐩𝐞𝐧 𝐒𝐞𝐰𝐚 𝐁𝐲 𝐁𝐎𝐓𝐙 𝐃𝐄𝐕𝐈𝐋----I| 
+
+           ╭─═  ❃ 𝐹𝑖𝑡𝑢𝑟 𝐵𝑜𝑡𝑧 ❃  ═══
+           │❒ 𝑨𝒏𝒕𝒊𝒍𝒊𝒏𝒌
+           │❒ 𝑨𝒏𝒕𝒊𝒗𝒊𝒓𝒕𝒆𝒙
+           │❒ 𝑨𝒏𝒕𝒊𝒉𝒊𝒅𝒆𝒕𝒂𝒈
+           │❒ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆
+           │❒ 𝑺𝒐𝒖𝒏𝒅 𝑴𝒆𝒏𝒖
+           │❒ 𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝑴𝒆𝒏𝒖
+           │❒ 𝑮𝒓𝒖𝒑 𝑴𝒆𝒏𝒖
+           │❒ 𝑮𝒂𝒎𝒆 𝑴𝒆𝒏𝒖
+           │❒ 𝑾𝒊𝒃𝒖 𝑴𝒆𝒏𝒖
+           │❒ 𝑰𝒏𝒇𝒐 𝑴𝒆𝒏𝒖
+           ╰────────────┈ ⳹
+           ╭回 𝐻𝑎𝑟𝑔𝑎 𝑆𝑒𝑤𝑎 回
+           │ 𝟏 𝑴𝒊𝒏𝒈𝒈𝒖 : 𝟓𝐊
+           │ 𝟏 𝑩𝒖𝒍𝒂𝒏 : 𝟏𝟎𝐊
+           │𝐩𝐞𝐫𝐦𝐚𝐧𝐞𝐧 𝐬𝐚𝐦𝐩𝐞 𝐨𝐰𝐧𝐞𝐫 𝐩𝐞𝐧𝐬𝐢 : 𝟐𝟎𝐊
+           │𝑱𝒐𝒊𝒏 𝑴𝒖𝒓𝒊𝒅 𝑩𝒐𝒕 : 𝟐𝟓𝐊
+           │𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝟏𝐛𝐮𝐥𝐚𝐧 : 𝟓𝐤
+           │𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐦𝐚𝐧𝐞𝐧 : 𝟏𝟓𝐤
+           ╰─────────┈ ⳹
+           ╭回 𝑂𝑤𝑛𝑒𝑟 回
+           │Klik mau di bawah
+           ╰─────────┈ ⳹
+
+            [⚠️𝐼𝑛𝑓𝑜⚠️]
+            𝐩𝐞𝐫𝐦𝐚𝐧𝐞𝐧 𝐛𝐮𝐤𝐚𝐧 𝐚𝐦𝐩𝐞 𝐤𝐢𝐚𝐦𝐚𝐭 𝐚𝐧𝐣
+
+          </div>
+
+          <div class="mybutton">
+
+            <div class="mybuttonno" onmouseover="move()" onclick="move2()">Nggak</div>
+
+            <div class="mybuttonyes" onclick="wa.me/6288215463787">Mau</div>
+
+          </div>
+
+        </div>
+
+        <div class="myresize"></div>
+
+      </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/index.min.js"></script>
+
+  </body>
+
+</html>
+
+
+
